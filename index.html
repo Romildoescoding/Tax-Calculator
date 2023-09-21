@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAX CALCULATOR</title>
+    <link rel="stylesheet" href="style.css"> <!-- Add your CSS file if needed -->
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="calc">
+        <div class="textdiv">
+            <h1>TAX CALCULATOR</h1>
+        </div>
+
+        <div class="inputs">
+            <form class="taxform">
+                <div class="division">
+                    <div class="labels">
+                        <label class="labelbox1" for="basesal">Base salary (INR)</label>
+                        <label class="labelbox" for="hra">HRA (%)</label>
+                        <label class="labelbox" for="da">DA (%)</label>
+                        <label class="labelbox" for="ta">TA (%)</label>
+                    </div>
+
+                    <div class="inputbars">
+                        <input id="basesal" type="number" placeholder="Enter Base salary" class="inputbtn" min="0">
+                        <input id="hra" type="number" placeholder="Enter HRA" class="inputbtn" min="0" max="100">
+                        <input id="da" type="number" placeholder="Enter DA" class="inputbtn" min="0" max="100">
+                        <input id="ta" type="number" placeholder="Enter TA" class="inputbtn" min="0" max="100">
+                    </div>
+
+                </div>
+
+                <div class="radiobuttons">
+                    <p>Select Gender:</p>
+                    <label for="female">Female</label>
+                    <input id="female" type="radio" class="radiobtn" name="gender">
+                    <label for="male">Male</label>
+                    <input id="male" type="radio" class="radiobtn" name="gender">
+                </div>
+                
+                <button class="btn" onclick="tax_calculation(event)">CALCULATE TAX</button>
+                
+                
+                
+                <div id="result">
+                    <!-- The result will be displayed here -->
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
